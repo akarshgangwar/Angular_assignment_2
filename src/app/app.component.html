@@ -1,4 +1,4 @@
 <input type="text" [(ngModel)]="username" (input)="checktStatusOfInput($event)" >
 <p>{{ username }}</p>
 
-<button  [disabled]="indicator" >Reset</button>
+<button  (click)="resetValue()" [disabled]="indicator" >Reset</button>
